@@ -1,0 +1,40 @@
+2022-04-29T00:39:17+00:00 CRITICAL Uncaught Error: Class 'Elementor\Plugin' not found in C:\wamp64\www\wordpress\wp-content\plugins\essential-addons-for-elementor-lite\includes\Traits\Core.php:305
+Stack trace:
+#0 C:\wamp64\www\wordpress\wp-includes\class-wp-hook.php(307): Essential_Addons_Elementor\Classes\Bootstrap->save_global_values_trashed_post(30)
+#1 C:\wamp64\www\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 C:\wamp64\www\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\wordpress\wp-includes\post.php(3610): do_action('trashed_post', 30)
+#4 C:\wamp64\www\wordpress\wp-admin\edit.php(121): wp_trash_post(30)
+#5 {main}
+  thrown in C:\wamp64\www\wordpress\wp-content\plugins\essential-addons-for-elementor-lite\includes\Traits\Core.php on line 305
+
+2022-04-29T00:39:44+00:00 CRITICAL Uncaught Error: Class 'Elementor\Plugin' not found in C:\wamp64\www\wordpress\wp-content\plugins\essential-addons-for-elementor-lite\includes\Traits\Core.php:305
+Stack trace:
+#0 C:\wamp64\www\wordpress\wp-includes\class-wp-hook.php(307): Essential_Addons_Elementor\Classes\Bootstrap->save_global_values_trashed_post(25)
+#1 C:\wamp64\www\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 C:\wamp64\www\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\wordpress\wp-includes\post.php(3610): do_action('trashed_post', 25)
+#4 C:\wamp64\www\wordpress\wp-admin\edit.php(121): wp_trash_post(25)
+#5 {main}
+  thrown in C:\wamp64\www\wordpress\wp-content\plugins\essential-addons-for-elementor-lite\includes\Traits\Core.php on line 305
+
+2022-04-29T00:40:05+00:00 CRITICAL Uncaught Error: Class 'Elementor\Plugin' not found in C:\wamp64\www\wordpress\wp-content\plugins\essential-addons-for-elementor-lite\includes\Traits\Core.php:305
+Stack trace:
+#0 C:\wamp64\www\wordpress\wp-includes\class-wp-hook.php(307): Essential_Addons_Elementor\Classes\Bootstrap->save_global_values_trashed_post(15)
+#1 C:\wamp64\www\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 C:\wamp64\www\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\wordpress\wp-includes\post.php(3610): do_action('trashed_post', 15)
+#4 C:\wamp64\www\wordpress\wp-admin\post.php(260): wp_trash_post(15)
+#5 {main}
+  thrown in C:\wamp64\www\wordpress\wp-content\plugins\essential-addons-for-elementor-lite\includes\Traits\Core.php on line 305
+
+2022-04-29T00:40:38+00:00 CRITICAL Uncaught Error: Class 'Elementor\Plugin' not found in C:\wamp64\www\wordpress\wp-content\plugins\essential-addons-for-elementor-lite\includes\Traits\Core.php:305
+Stack trace:
+#0 C:\wamp64\www\wordpress\wp-includes\class-wp-hook.php(307): Essential_Addons_Elementor\Classes\Bootstrap->save_global_values_trashed_post(1)
+#1 C:\wamp64\www\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 C:\wamp64\www\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\wordpress\wp-includes\post.php(3610): do_action('trashed_post', 1)
+#4 C:\wamp64\www\wordpress\wp-admin\edit.php(121): wp_trash_post(1)
+#5 {main}
+  thrown in C:\wamp64\www\wordpress\wp-content\plugins\essential-addons-for-elementor-lite\includes\Traits\Core.php on line 305
+

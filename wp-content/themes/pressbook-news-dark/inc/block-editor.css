@@ -1,0 +1,89 @@
+/* Dark Content Background
+--------------------------------------------- */
+.block-editor-page .editor-styles-wrapper {
+	background: #000;
+	color: #a0a0a0;
+}
+
+.block-editor-page .editor-styles-wrapper .editor-post-title__input,
+.block-editor-page .editor-styles-wrapper .editor-post-title .editor-post-title__input,
+.block-editor-page .editor-styles-wrapper h1,
+.block-editor-page .editor-styles-wrapper h2,
+.block-editor-page .editor-styles-wrapper h3,
+.block-editor-page .editor-styles-wrapper h4,
+.block-editor-page .editor-styles-wrapper h5,
+.block-editor-page .editor-styles-wrapper h6 {
+	color: #ffffff;
+}
+
+.block-editor-page mark,
+.block-editor-page ins {
+	background: #52503e;
+}
+
+.block-editor-page .wp-block-quote .wp-block-quote__citation,
+.block-editor-page blockquote .wp-block-quote__citation,
+.block-editor-page blockquote cite,
+.block-editor-page blockquote footer {
+	color: #a7a7a7;
+}
+
+.block-editor-page .wp-block-code,
+.block-editor-page pre,
+.block-editor-page .wp-block-freeform.block-library-rich-text__tinymce pre {
+	color: #fff;
+}
+
+.block-editor-page .wp-block-pullquote {
+	border-top-color: #a7a7a7;
+	border-bottom-color: #a7a7a7;
+	color: #a7a7a7;
+}
+
+.block-editor-page .wp-block-pullquote p {
+	color: #fff;
+}
+
+.block-editor-page .wp-block-table figcaption,
+.block-editor-page .wp-block-video figcaption,
+.block-editor-page .wp-block-audio figcaption,
+.block-editor-page .wp-block-embed figcaption,
+.block-editor-page .wp-block-image figcaption,
+.block-editor-page .wp-block-gallery figcaption,
+.block-editor-page .wp-block-calendar table caption,
+.block-editor-page .wp-block-calendar table tbody {
+	color: #a7a7a7;
+}
+
+.block-editor-page .wp-block-calendar table th {
+	background-color: transparent;
+}
+
+.block-editor-page .wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
+	background-color: #232323;
+}
+
+.block-editor-page .wp-block-latest-posts .wp-block-latest-posts__post-author,
+.block-editor-page .wp-block-latest-posts .wp-block-latest-posts__post-date,
+.block-editor-page .wp-block-rss .wp-block-rss__item-author,
+.block-editor-page .wp-block-rss .wp-block-rss__item-publish-date {
+	color: #a7a7a7;
+}
+
+.block-editor-page .block-editor-button-block-appender {
+	box-shadow: inset 0 0 0 1px #555;
+}
+
+.block-editor-page .block-editor .block-editor-plain-text {
+	color: #32373c;
+}
+
+.block-editor-page .editor-styles-wrapper a {
+	color: #d72924;
+}
+
+.block-editor-page .editor-styles-wrapper a:hover,
+.block-editor-page .editor-styles-wrapper a:focus,
+.block-editor-page .editor-styles-wrapper a:active {
+	color: #df5450;
+}

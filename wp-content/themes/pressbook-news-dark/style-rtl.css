@@ -1,0 +1,702 @@
+/*
+Theme Name: PressBook News Dark
+Theme URI: https://scriptstown.com/wordpress-themes/pressbook-news-dark/
+Author: ScriptsTown
+Author URI: https://scriptstown.com/
+Description: PressBook News Dark is an elegant, multipurpose dark theme suitable for news, movies, entertainment, and educational websites. It is a lightweight, modern, and fully mobile responsive WordPress theme with great typography and creative layout design. The theme is translation-ready and also supports RTL languages. The theme offers multiple posts carousel sliders with autoplay option, top navbar with unlimited gradient background colors, top advertisement banner with link option, multi-level dropdown menu, page templates with page-level settings, single and double sticky-floating sidebars, footer widgets, header and footer block areas, and many options for customizations. It is an awesome dark theme for music artists, photography, news, magazines, gaming, anime, stories, blogs, agencies, insurance, businesses, firms, corporate, or personal websites. The theme has minimal dependencies so its loading speed is fast which is great for SEO performance, usability, and user experience. The theme is also great for digital marketing as well as freelancing websites. It is compatible with WooCommerce to create an eCommerce shopping website. The theme supports infinite scrolling with the Jetpack plugin. The theme also fits nicely for websites of vloggers, photographers, photobloggers, and portfolios. You can use this theme to create a university portal, schools, academy, institutes, news portal, or consulting website. It is compatible with Gutenberg blocks and page builder plugins like Elementor. This theme allows you to create a good-looking, very unique design with a dark color scheme. In the block areas, you can put any custom blocks to showcase any features, services, gallery, sliders, or testimonials.
+Template: pressbook
+Version: 1.0.3
+Requires at least: 5.3
+Tested up to: 5.9
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: pressbook-news-dark
+Tags: blog, entertainment, news, one-column, two-columns, three-columns, left-sidebar, right-sidebar, block-styles, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, flexible-header, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, wide-blocks
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Typography and Colors
+# Dark Content Background
+# Top Navbar
+# Site Branding
+# Top Banner
+# Primary Navbar
+# Primary Menu Search
+# Posts Carousel
+# Related Posts Carousel
+# Sidebar Widgets
+# Footer Widgets
+# Go to Top
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Typography and Colors
+--------------------------------------------------------------*/
+body {
+	background: #000;
+}
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	font-family: 'IBM Plex Serif', 'Georgia', 'Times New Roman', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.site-title {
+	font-family: 'Lora', 'Cambria', sans-serif;
+}
+
+a {
+	color: #d72924;
+}
+
+a:hover,
+a:focus,
+a:active {
+	color: #df5450;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.more-link,
+.wp-block-search .wp-block-search__button {
+	background-image: linear-gradient(to left, #d72924 0%, #db3e3a 51%, #d72924 100%);
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.wp-block-search .wp-block-search__button {
+	padding-top: 6px;
+	padding-bottom: 8px;
+}
+
+.more-link {
+	padding-top: 8px;
+	padding-bottom: 10px;
+}
+
+body,
+.c-sidebar,
+.c-sidebar a {
+	color: #a0a0a0;
+}
+
+.cat-links a:active,
+.cat-links a:focus,
+.cat-links a:hover,
+.entry-meta a:active,
+.entry-meta a:focus,
+.entry-meta a:hover,
+.tag-links a:active,
+.tag-links a:focus,
+.tag-links a:hover,
+.comment-metadata a:active,
+.comment-metadata a:focus,
+.comment-metadata a:hover {
+	color: #ffffff;
+}
+
+.entry-title,
+.entry-title a,
+.site-main h1,
+.site-main h2,
+.site-main h3,
+.site-main h4,
+.site-main h5,
+.site-main h6,
+.c-sidebar h1,
+.c-sidebar h2,
+.c-sidebar h3,
+.c-sidebar h4,
+.c-sidebar h5,
+.c-sidebar h6 {
+	color: #ffffff;
+}
+
+.entry-title a:hover,
+.entry-title a:focus,
+.entry-title a:active {
+	color: #df5450;
+}
+
+.c-sidebar a:hover,
+.c-sidebar a:focus,
+.c-sidebar a:active {
+	color: #df5450;
+}
+
+.copyright-text a {
+	color: #d72924;
+}
+
+.more-link:active,
+.more-link:focus {
+	outline-color: #a0a0a0;
+}
+
+.site-main,
+.c-sidebar .widget {
+	background: #000;
+}
+
+.site-main {
+	border-color: #000;
+}
+
+.c-sidebar .widget {
+	border-color: #000;
+	box-shadow: -1px 2px 3px rgba(255, 255, 255, .3);
+}
+
+.cat-links .svg-icon,
+.cat-links a,
+.entry-meta .svg-icon,
+.entry-meta a,
+.tag-links .svg-icon,
+.tag-links a,
+.post-edit-link-wrap,
+.pb-article.sticky .pb-sticky,
+.comment-metadata a {
+	color: #c0c0c0;
+}
+
+/*--------------------------------------------------------------
+# Dark Content Background
+--------------------------------------------------------------*/
+.pressbook-dark mark,
+.pressbook-dark ins {
+	background: #52503e;
+}
+
+.pressbook-dark .wp-block-quote .wp-block-quote__citation,
+.pressbook-dark blockquote .wp-block-quote__citation,
+.pressbook-dark blockquote cite,
+.pressbook-dark blockquote footer {
+	color: #a7a7a7;
+}
+
+.pressbook-dark .wp-block-code,
+.pressbook-dark pre {
+	color: #fff;
+	background: none;
+}
+
+.pressbook-dark .wp-block-pullquote {
+	border-top-color: #a7a7a7;
+	border-bottom-color: #a7a7a7;
+	color: #a7a7a7;
+}
+
+.pressbook-dark .wp-block-pullquote p {
+	color: #fff;
+}
+
+.pressbook-dark .wp-block-table figcaption,
+.pressbook-dark .wp-block-video figcaption,
+.pressbook-dark .wp-block-audio figcaption,
+.pressbook-dark .wp-block-embed figcaption,
+.pressbook-dark .wp-block-image figcaption,
+.pressbook-dark .wp-block-gallery figcaption,
+.pressbook-dark .wp-block-calendar table caption,
+.pressbook-dark .wp-block-calendar table tbody {
+	color: #a7a7a7;
+}
+
+.pressbook-dark .wp-block-calendar table th {
+	background-color: transparent;
+}
+
+.pressbook-dark .wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
+	background-color: #232323;
+}
+
+.pressbook-dark .wp-block-latest-posts .wp-block-latest-posts__post-author,
+.pressbook-dark .wp-block-latest-posts .wp-block-latest-posts__post-date,
+.pressbook-dark .wp-block-rss .wp-block-rss__item-author,
+.pressbook-dark .wp-block-rss .wp-block-rss__item-publish-date {
+	color: #a7a7a7;
+}
+
+.site-main input[type="text"]:focus,
+.site-main input[type="email"]:focus,
+.site-main input[type="url"]:focus,
+.site-main input[type="password"]:focus,
+.site-main input[type="search"]:focus,
+.site-main input[type="number"]:focus,
+.site-main input[type="tel"]:focus,
+.site-main input[type="range"]:focus,
+.site-main input[type="date"]:focus,
+.site-main input[type="month"]:focus,
+.site-main input[type="week"]:focus,
+.site-main input[type="time"]:focus,
+.site-main input[type="datetime"]:focus,
+.site-main input[type="datetime-local"]:focus,
+.site-main input[type="color"]:focus,
+.site-main textarea:focus,
+.site-main select:focus,
+.site-main button:active,
+.site-main button:focus,
+.site-main input[type="button"]:active,
+.site-main input[type="button"]:focus,
+.site-main input[type="reset"]:active,
+.site-main input[type="reset"]:focus,
+.site-main input[type="submit"]:active,
+.site-main input[type="submit"]:focus {
+	outline-color: #fff;
+}
+
+.c-sidebar .widget button:active,
+.c-sidebar .widget button:focus,
+.c-sidebar .widget input[type="button"]:active,
+.c-sidebar .widget input[type="button"]:focus,
+.c-sidebar .widget input[type="reset"]:active,
+.c-sidebar .widget input[type="reset"]:focus,
+.c-sidebar .widget input[type="submit"]:active,
+.c-sidebar .widget input[type="submit"]:focus {
+	outline-color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Top Navbar
+--------------------------------------------------------------*/
+.top-navbar {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.92) 0%, rgba(215, 41, 36, 0.92) 100%);
+}
+
+.social-navigation a:hover .svg-icon,
+.social-navigation a:focus .svg-icon,
+.social-navigation a:active .svg-icon {
+	color: rgba(0, 0, 0, 0.92);
+}
+
+/*--------------------------------------------------------------
+# Site Branding
+--------------------------------------------------------------*/
+.site-branding {
+	padding-top: 1.1em;
+	padding-bottom: 1.3em;
+	background-color: #000;
+}
+
+.site-title,
+.site-title a,
+.site-title a:hover,
+.site-title a:focus,
+.site-title a:active {
+	color: #ffffff;
+}
+
+.site-tagline {
+	color: #a0a0a0;
+}
+
+/*--------------------------------------------------------------
+# Top Banner
+--------------------------------------------------------------*/
+.top-banner-shadow {
+	box-shadow: 0 1px 35px 0 rgb(255 255 255 / 30%);
+}
+
+/*--------------------------------------------------------------
+# Primary Navbar
+--------------------------------------------------------------*/
+.primary-navbar,
+.main-navigation li,
+.main-navigation ul ul li {
+	padding: 0;
+}
+
+.main-navigation:not(.toggled):not(.main-navigation--touch) ul li:hover>ul,
+.main-navigation ul li.focus>ul {
+	top: 0;
+}
+
+@media screen and (min-width: 768px) {
+	.main-navigation .menu>li:first-child {
+		padding: 0 0 0 .2em;
+	}
+
+	.main-navigation .menu>li:not(:first-child) {
+		padding: 0 .2em 0 .2em;
+	}
+
+	.main-navigation ul ul li.menu-item-has-children {
+		padding-left: .4em;
+	}
+
+	.main-navigation:not(.toggled):not(.main-navigation--touch) ul li:hover>ul,
+	.main-navigation ul li.focus>ul {
+		top: 100%;
+	}
+
+	.main-navigation:not(.toggled):not(.main-navigation--touch) ul ul li:hover>ul,
+	.main-navigation ul ul li.focus>ul {
+		top: 0;
+	}
+}
+
+.primary-navbar,
+.main-navigation ul ul {
+	background: rgba(17, 17, 17, 0.92);
+}
+
+.primary-menu-toggle .svg-icon {
+	width: 1.7em;
+	height: 1.75em;
+}
+
+.main-navigation-arrow-btn {
+	align-self: stretch;
+}
+
+.main-navigation-arrow-btn .svg-icon {
+	width: 1em;
+	height: 1em;
+	vertical-align: baseline;
+}
+
+.main-navigation a {
+	position: relative;
+	padding: .7em .8em .95em .8em;
+}
+
+.primary-navbar-no-border .main-navigation a {
+	padding-bottom: .775em;
+}
+
+.main-navigation .menu>.menu-item>a::before {
+	position: absolute;
+	top: -6px;
+	right: 0;
+	height: 6px;
+	width: 100%;
+	border-radius: 8px 3px 0px 0px;
+	opacity: 0;
+	transition: all .2s ease-out 0s;
+}
+
+.primary-navbar-no-border .main-navigation .menu>.menu-item>a::before {
+	display: none;
+}
+
+.main-navigation .menu>.menu-item>a:hover::before,
+.main-navigation .menu>.menu-item>a:focus::before,
+.main-navigation .menu>.menu-item>a:active::before,
+.main-navigation .menu>.current-menu-ancestor>a::before,
+.main-navigation .menu>.current-menu-item>a::before,
+.main-navigation .menu>.current-menu-parent>a::before {
+	opacity: 1;
+}
+
+.main-navigation .menu>.menu-item>a::before,
+.main-navigation .menu .current-menu-ancestor>a,
+.main-navigation .menu .current-menu-item>a,
+.main-navigation .menu .current-menu-parent>a {
+	background: #d72924;
+}
+
+@media screen and (min-width: 768px) {
+	.main-navigation-arrow-btn {
+		align-self: center;
+	}
+
+	.main-navigation .menu>.menu-item>a::before,
+	.main-navigation .menu>.current-menu-ancestor>a::before,
+	.main-navigation .menu>.current-menu-item>a::before,
+	.main-navigation .menu>.current-menu-parent>a::before {
+		content: "";
+	}
+}
+
+.main-navigation:not(.toggled) li:hover>.main-navigation-arrow-btn,
+.main-navigation li.focus>.main-navigation-arrow-btn,
+.main-navigation .main-navigation-arrow-btn:hover,
+.main-navigation .main-navigation-arrow-btn:active,
+.main-navigation a:hover,
+.main-navigation a:focus,
+.main-navigation a:active {
+	color: #fff;
+	background: #d72924;
+}
+
+/*--------------------------------------------------------------
+# Primary Menu Search
+--------------------------------------------------------------*/
+.primary-navbar .primary-menu-search .primary-menu-search-toggle {
+	width: 36px;
+	height: 36px;
+	padding: .5em;
+}
+
+.primary-navbar .primary-menu-search-toggle .svg-icon {
+	width: 1.1em;
+	height: 1.1em;
+}
+
+.primary-navbar .main-navigation .primary-menu-search {
+	padding-top: 1.6em;
+	padding-bottom: .8em;
+}
+
+@media screen and (min-width: 768px) {
+	.primary-navbar .main-navigation .primary-menu-search {
+		padding-bottom: 0;
+	}
+}
+
+/*--------------------------------------------------------------
+# Posts Carousel
+--------------------------------------------------------------*/
+.carousel-posts {
+	position: relative;
+	color: #c0c0c0;
+}
+
+.header-carousel-posts {
+	margin-top: 1.5em;
+}
+
+.footer-carousel-posts {
+	margin-bottom: 1.5em;
+}
+
+.carousel-posts .glide__slides {
+	margin: 0 25px;
+}
+
+.carousel-posts .glide__slide {
+	display: flex;
+	height: 105px;
+	margin: 0;
+	padding: .5em 0;
+	background: rgba(12, 12, 12, 0.92);
+}
+
+.carousel-posts .carousel-post-image-wrap {
+	max-width: 75px;
+	margin-right: .5em;
+	overflow: hidden;
+}
+
+.carousel-posts .carousel-post-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	transition: .3s all;
+}
+
+.carousel-posts .carousel-post-image-link:hover img {
+	transform: scale(1.1);
+}
+
+.carousel-posts .carousel-post-title-wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 1em;
+	word-break: break-word;
+	word-wrap: break-word;
+	padding-left: .5em;
+}
+
+@media screen and (min-width: 1024px) {
+	.carousel-posts .carousel-post-title-wrap {
+		padding-left: .25em;
+	}
+
+	.carousel-posts .carousel-post-only-title .carousel-post-title-wrap {
+		padding-left: .7em;
+	}
+}
+
+.carousel-posts .carousel-post-title-link,
+.carousel-post-taxonomy-link,
+.carousel-posts .carousel-post-excerpt {
+	font-size: .9em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+}
+
+.carousel-posts .carousel-post-title-link {
+	text-decoration: none;
+	font-weight: 600;
+	color: inherit;
+	-webkit-line-clamp: 2;
+}
+
+.carousel-posts .carousel-post-title-link:hover,
+.carousel-posts .carousel-post-title-link:focus,
+.carousel-posts .carousel-post-title-link:active {
+	color: #df5450;
+}
+
+.carousel-post-taxonomy-link,
+.carousel-posts .carousel-post-excerpt {
+	margin: .25em 0;
+	-webkit-line-clamp: 1;
+}
+
+.carousel-post-taxonomy-link {
+	text-decoration: none;
+	font-size: .85em;
+	font-weight: 600;
+}
+
+.carousel-posts .glide__arrow {
+	position: absolute;
+	top: 0;
+	width: 30px;
+	height: 100%;
+	padding: 6px 8px;
+	border: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background: rgba(12, 12, 12, 0.92);
+	color: inherit;
+	opacity: .9;
+	cursor: pointer;
+	transition: .3s all;
+}
+
+.carousel-posts .glide__arrow:hover,
+.carousel-posts .glide__arrow:focus,
+.carousel-posts .glide__arrow:active {
+	background: #d72924;
+	color: #fff;
+}
+
+.carousel-posts .glide__arrow--left {
+	left: 0;
+}
+
+.carousel-posts .glide__arrow--right {
+	right: 0;
+}
+
+.carousel-posts .glide__arrow--left .svg-icon {
+	transform: rotate(90deg);
+}
+
+.carousel-posts .glide__arrow--right .svg-icon {
+	transform: rotate(-90deg);
+}
+
+.carousel-posts .glide__arrow .svg-icon {
+	width: 1em;
+	height: 1em;
+}
+
+/*--------------------------------------------------------------
+# Related Posts Carousel
+--------------------------------------------------------------*/
+.pb-related-posts-title {
+	margin-bottom: 1.5em;
+	padding: .5em 0;
+	border-bottom: 1px solid #e1e1e1;
+	font-size: 1.3em;
+}
+
+.carousel-related-posts .carousel-post-title-wrap {
+	margin-right: .7em;
+	margin-left: .7em;
+}
+
+.carousel-related-posts {
+	color: inherit;
+}
+
+.carousel-related-posts .glide__slide,
+.carousel-related-posts .glide__arrow {
+	background: inherit;
+}
+
+/*--------------------------------------------------------------
+# Sidebar Widgets
+--------------------------------------------------------------*/
+.c-sidebar .widget .widget-title::after,
+.c-sidebar .widget_block h1:first-child::after,
+.c-sidebar .widget_block h2:first-child::after,
+.c-sidebar .widget_block h3:first-child::after {
+	background: #d72924;
+}
+
+/*--------------------------------------------------------------
+# Footer Widgets
+--------------------------------------------------------------*/
+.footer-widgets,
+.copyright-text {
+	background: rgba(12, 12, 12, 0.92);
+}
+
+.footer-widgets .widget {
+	margin: 0 0 1.7em;
+}
+
+.footer-widgets .widget .widget-title,
+.footer-widgets .widget_block h1:first-child,
+.footer-widgets .widget_block h2:first-child,
+.footer-widgets .widget_block h3:first-child {
+	position: relative;
+	margin-bottom: 1.4em;
+	padding-bottom: .7em;
+}
+
+.footer-widgets .widget .widget-title::after,
+.footer-widgets .widget_block h1:first-child::after,
+.footer-widgets .widget_block h2:first-child::after,
+.footer-widgets .widget_block h3:first-child::after {
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: -1px;
+	width: 40px;
+	height: 2px;
+	background: #d72924;
+}
+
+.footer-widgets .widget li::before {
+	content: "\25B8";
+	display: inline-block;
+	width: 1em;
+	margin-left: 5px;
+	font-weight: bold;
+	color: #d72924;
+}
+
+/*--------------------------------------------------------------
+# Go to Top
+--------------------------------------------------------------*/
+.go-to-top:hover,
+.go-to-top:focus {
+	background: linear-gradient(0deg, #d72924 0%, #e36966 100%);
+}
+
+.go-to-top:focus {
+	box-shadow: 0px 0px 3px #d72924;
+}
+
+.go-to-top:active {
+	background: #d72924;
+}
